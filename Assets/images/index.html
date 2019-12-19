@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Image Hover Zoom</title>
+<style>
+body {margin:0px; padding: 0px; background:url(../background2.png)}
+.wrapper {
+    width: 100%;
+}
+.parent {
+    width: 25%;
+    height: 180px;
+    border: 0px solid #fff;
+    overflow: hidden;
+    position: relative;
+    float: left;
+    display: inline-block;
+	cursor: pointer;
+}
+.child {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all .5s;
+}
+
+/* different images */
+.bg-one {background-image: url(karanJohar.png);}
+.bg-two {background-image: url(katrinaKaif.jpg);}
+.bg-three {background-image: url(salmanKhan.jpg);}
+.bg-four {background-image: url(sahrukhKhan.jpg);}
+.parent:hover .child, .parent:focus .child {
+    transform: scale(1.3);
+}
+.parent:hover .child:before, .parent:focus .child:before {
+    display: block;
+}
+.child:before {
+    content: "";
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+</style>
+</head>
+
+<body>
+<div class="wrapper">
+	<a href="">
+	<div class="parent" onclick="">
+		<div class="child">
+			<img src="katrinaKaif.jpg" style="width:100%;height:180px;" class="bg-one">
+		</div>
+	</div></a>
+<a href="">
+	<div class="parent right" onclick="">
+		<div class="child">
+		<img src="karanJohar.png" style="width:100%;height:180px;" class="bg-one">
+		</div>
+	</div></a>
+<a href="">
+	<div class="parent" onclick="">
+		<div class="child">
+		<img src="sahrukhKhan.jpg" style="width:100%;height:180px;" class="bg-one">
+		</div>
+	</div></a>
+<a href="">
+	<div class="parent right" onclick="">
+		<div class="child">
+		<img src="salmanKhan.jpg" style="width:100%;height:180px;" class="bg-one">
+		</div>
+	</div></a>
+</div>
+</body>
+</html>

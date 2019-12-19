@@ -1,0 +1,427 @@
+<!doctype html>
+<html>
+<head>
+<style>
+body{margin:0px;padding:0px;color:black;background-color:#e9ebee;font-family:verdana,sans-serif;}
+.container-fluid{background-color:#ffffff;}
+td a{font-size:12px;color:grey;text-decoration:none;}
+.wrapper {
+    width: 100%;
+}
+.parent {
+    width: 23%;
+    height: 180px;
+	margin-left:5px;
+    border: 0px solid #fff;
+    overflow: hidden;
+    position: relative;
+    float: left;
+    display: inline-block;
+	cursor: pointer;
+}
+.child {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all .5s;
+	border-radius:10%;
+	border:1px solid grey;
+}
+
+/* different images */
+.bg-one {background-image: url();}
+.bg-two {background-image: url();}
+.bg-three {background-image: url();}
+.bg-four {background-image: url();}
+.parent:hover .child, .parent:focus .child {
+    transform: scale(1.3);
+}
+.parent:hover .child:before, .parent:focus .child:before {
+    display: block;
+}
+.child:before {
+    content: "";
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.child img{border-radius:10%;height:178px;}
+</style>
+</head>
+<body>
+<br>
+<div class="container-fluid">
+<font style="font-size:12px">Create Post</font>
+</div>
+<br>
+<div class="container-fluid">
+<img src="images/karanJohar.png" style="border-radius:50%;height:50px;width:50px;">
+<textarea style="height:50px;width:85%;float:right;border:0px;font-size:15px;" placeholder="Write something here...
+यहां कुछ लिखिए..." rows="3" cols="80"></textarea>
+</div>
+<br>
+<br>
+<div class="container-fluid">
+<table style="width:100%">
+<tr>
+<td width="30%"><a href="#">Photo/Videos</a></td>
+<td width="30%"><a href="#">Tag Friends</a></td>
+<td width="30%"><a href="#">Feeling/Activ...</a></td>
+<td width="10%"><a href="#"><img src="images/3 horizontal dots.svg" style="width:20px;"></a></td>
+</tr>
+</table>
+</div>
+<br>
+<div class="container-fluid" style="margin-bottom:15px">
+<font style="color:grey;font-weight:bold;font-size:12px;">Stories</font>
+<a link="#" style="text-decoration:none;color:blue;font-size:12px;float:right;cursor:pointer">See All</a>
+<br><br>
+<div class="wrapper">
+	<a href="">
+	<div class="parent" onclick="">
+		<div class="child">
+			<img src="images/karanJohar.png" style="width:100%;height:180px;" class="bg-one">
+		</div>
+		<img src="images/add.png" style="width:35px;height:35px;border:0px solid blue;margin-top:-170px;margin-left:15px;border-radius:50%;position:absolute;z-index:2;">
+		<font style="color:white;font-weight:bold;position:absolute;z-index:3;margin-top:-35px;margin-left:10px;font-size:13px">Add to story</font>
+	</div>
+	</a>
+<a href="">
+	<div class="parent right" onclick="">
+		<div class="child">
+		<img src="images/katrinaKaif2.jpg" style="width:100%;height:180px;" class="bg-one">
+		</div>
+		<img src="images/katrinaKaif.jpg" style="width:30px;height:30px;border:5px solid blue;margin-top:-170px;margin-left:15px;border-radius:50%;position:absolute;z-index:2;">
+		<font style="color:white;font-weight:bold;position:absolute;z-index:3;margin-top:-35px;margin-left:10px;font-size:13px">Katrina Kaif</font>
+	</div>
+	</a>
+<a href="">
+	<div class="parent" onclick="">
+		<div class="child">
+		<img src="images/sahrukhKhan2.jpg" style="width:100%;height:180px;" class="bg-one">
+		</div>
+		<img src="images/sahrukhKhan.jpg" style="width:30px;height:30px;border:5px solid blue;margin-top:-170px;margin-left:15px;border-radius:50%;position:absolute;z-index:2;">
+		<font style="color:white;font-weight:bold;position:absolute;z-index:3;margin-top:-35px;margin-left:px;font-size:13px">Sahrukh Khan</font>
+	</div>
+	</a>
+<a href="">
+	<div class="parent right" onclick="">
+		<div class="child">
+		<img src="images/salmanKhan2.jpg" style="width:100%;height:180px;" class="bg-one">
+		</div>
+		<img src="images/salmanKhan.jpg" style="width:30px;height:30px;border:5px solid blue;margin-top:-170px;margin-left:15px;border-radius:50%;position:absolute;z-index:2;">
+		<font style="color:white;font-weight:bold;position:absolute;z-index:3;margin-top:-35px;margin-left:7px;font-size:13px">Salman Khan</font>
+	</div>
+	</a>
+</div>
+</div>
+<br>
+<!-------------------------------------++++++++++++++++++++++++++++++++++++++++++++++++++++++---------------------------------------------->
+<div class="container-fluid">
+<table style="width:100%;height:50px;margin-top:25px">
+<tr>
+<td width="15%"><img src="images/ferrariLogo.jpg" style="height:50px;width:50px;border-radius:50%"></td>
+<td width="75%">
+<font style="color:blue;font-weight:bold;margin-left:px;font-size:13px">Ferrari</font><br>
+<font style="color:grey;font-weight:bold;margin-left:px;font-size:10px">Swift to the 12th Dimension</font>
+</td>
+<td width="10%"><a href="#"><img src="images/3 horizontal dots.svg" style="width:20px;"></a></td>
+</tr>
+</table>
+<font style="color:black;font-size:13px">THE FIRST AND MOST DIFFICULT CHALLENGE FERRARI ALWAYS FACES WHEN IT DECIDES TO DEVELOP A NEW MODEL IS TO PUSH THE BOUNDARIES OF ITS OWN ACHIEVEMENTS YET AGAIN.</font><br>
+	<video style="height:285px;width:450px;object-fit:cover;margin-top:15px" controls id="uke1">
+		<source src="videos/Ferrari LaFerrari Aperta launch video Paris 2016 PistonHeads (2).mp4" type="video/mp4">
+	</video>
+<br>
+<table width="100%">
+<tr>
+<td width="6%"><img src="images/like2.png" style="height:30px;width:30px;"></td>
+<td width="44%">43k</td>
+<td width="50%">96 Comments 1.4k Share</td>
+</tr>
+</table>
+<table width="100%">
+<tr>
+<td width="6%"><img src="images/like.png" style="height:30px;width:30px;"></td>
+<td width="24%">Like</td>
+<td width="6%"><img src="images/comment.png" style="height:30px;width:30px;"></td>
+<td width="24%">Comment</td>
+<td width="6%"><img src="images/share.png" style="height:30px;width:30px;"></td>
+<td width="19%">Share</td>
+<td width="15%"><img src="images/kapilSharma.jpg" style="height:20px;width:20px;border-radius:50%">
+<img src="images/caret-down.svg" style="height:20px;width:20px;"></td>
+</tr>
+</table>
+</div>
+<!-------------------------------------++++++++++++++++++++++++++++++++++++++++++++++++++++++---------------------------------------------->
+<div class="container-fluid">
+<table style="width:100%;height:50px;margin-top:25px">
+<tr>
+<td width="15%"><img src="images/ajwawaterparkLogo.png" style="height:50px;width:50px;border-radius:50%"></td>
+<td width="75%">
+<font style="color:blue;font-weight:bold;margin-left:px;font-size:13px">Ajwa Water Park</font><br>
+<font style="color:grey;font-weight:bold;margin-left:px;font-size:10px">Swift to the 12th Dimension</font>
+</td>
+<td width="10%"><a href="#"><img src="images/3 horizontal dots.svg" style="width:20px;"></a></td>
+</tr>
+</table>
+<font style="color:black;font-size:13px">THE FIRST AND MOST DIFFICULT CHALLENGE FERRARI ALWAYS FACES WHEN IT DECIDES TO DEVELOP A NEW MODEL IS TO PUSH THE BOUNDARIES OF ITS OWN ACHIEVEMENTS YET AGAIN.</font><br>
+<video style="height:285px;width:450px;object-fit:cover;margin-top:15px" controls id="uke2">
+<source src="videos/Ajwa Water Park Ad.mp4" type="video/mp4">
+</video>
+<br>
+<table width="100%">
+<tr>
+<td width="6%"><img src="images/like2.png" style="height:30px;width:30px;"></td>
+<td width="44%">43k</td>
+<td width="50%">96 Comments 1.4k Share</td>
+</tr>
+</table>
+<table width="100%">
+<tr>
+<td width="6%"><img src="images/like.png" style="height:30px;width:30px;"></td>
+<td width="24%">Like</td>
+<td width="6%"><img src="images/comment.png" style="height:30px;width:30px;"></td>
+<td width="24%">Comment</td>
+<td width="6%"><img src="images/share.png" style="height:30px;width:30px;"></td>
+<td width="19%">Share</td>
+<td width="15%"><img src="images/kapilSharma.jpg" style="height:20px;width:20px;border-radius:50%">
+<img src="images/caret-down.svg" style="height:20px;width:20px;"></td>
+</tr>
+</table>
+</div>
+<!-------------------------------------++++++++++++++++++++++++++++++++++++++++++++++++++++++---------------------------------------------->
+<div class="container-fluid">
+<table style="width:100%;height:50px;margin-top:25px">
+<tr>
+<td width="15%"><img src="images/realmeLogo.jpg" style="height:50px;width:50px;border-radius:50%"></td>
+<td width="75%">
+<font style="color:blue;font-weight:bold;margin-left:px;font-size:13px">Realme X</font><br>
+<font style="color:grey;font-weight:bold;margin-left:px;font-size:10px">Leap to Premium</font>
+</td>
+<td width="10%"><a href="#"><img src="images/3 horizontal dots.svg" style="width:20px;"></a></td>
+</tr>
+</table>
+<font style="color:black;font-size:13px">THE FIRST AND MOST DIFFICULT CHALLENGE FERRARI ALWAYS FACES WHEN IT DECIDES TO DEVELOP A NEW MODEL IS TO PUSH THE BOUNDARIES OF ITS OWN ACHIEVEMENTS YET AGAIN.</font><br>
+<video style="height:285px;width:450px;object-fit:cover;margin-top:15px" controls id="uke3">
+<source src="videos/realme X Leap to Premium.mp4" type="video/mp4">
+</video>
+<br>
+<table width="100%">
+<tr>
+<td width="6%"><img src="images/like2.png" style="height:30px;width:30px;"></td>
+<td width="44%">43k</td>
+<td width="50%">96 Comments 1.4k Share</td>
+</tr>
+</table>
+<table width="100%">
+<tr>
+<td width="6%"><img src="images/like.png" style="height:30px;width:30px;"></td>
+<td width="24%">Like</td>
+<td width="6%"><img src="images/comment.png" style="height:30px;width:30px;"></td>
+<td width="24%">Comment</td>
+<td width="6%"><img src="images/share.png" style="height:30px;width:30px;"></td>
+<td width="19%">Share</td>
+<td width="15%"><img src="images/kapilSharma.jpg" style="height:20px;width:20px;border-radius:50%">
+<img src="images/caret-down.svg" style="height:20px;width:20px;"></td>
+</tr>
+</table>
+</div>
+<!-------------------------------------++++++++++++++++++++++++++++++++++++++++++++++++++++++---------------------------------------------->
+<div class="container-fluid">
+<table style="width:100%;height:50px;margin-top:25px">
+<tr>
+<td width="15%"><img src="images/panasonicLogo.jpg" style="height:50px;width:50px;border-radius:50%"></td>
+<td width="75%">
+<font style="color:blue;font-weight:bold;margin-left:px;font-size:13px">Panasonic</font><br>
+<font style="color:grey;font-weight:bold;margin-left:px;font-size:10px">Swift to the 12th Dimension</font>
+</td>
+<td width="10%"><a href="#"><img src="images/3 horizontal dots.svg" style="width:20px;"></a></td>
+</tr>
+</table>
+<font style="color:black;font-size:13px">THE FIRST AND MOST DIFFICULT CHALLENGE FERRARI ALWAYS FACES WHEN IT DECIDES TO DEVELOP A NEW MODEL IS TO PUSH THE BOUNDARIES OF ITS OWN ACHIEVEMENTS YET AGAIN.</font><br>
+<video style="height:285px;width:450px;object-fit:cover;margin-top:15px" controls id="uke4">
+<source src="videos/Panasonic Home Appliances - Aspire To More India (60 sec).mp4" type="video/mp4">
+</video>
+<br>
+<table width="100%">
+<tr>
+<td width="6%"><img src="images/like2.png" style="height:30px;width:30px;"></td>
+<td width="44%">43k</td>
+<td width="50%">96 Comments 1.4k Share</td>
+</tr>
+</table>
+<table width="100%">
+<tr>
+<td width="6%"><img src="images/like.png" style="height:30px;width:30px;"></td>
+<td width="24%">Like</td>
+<td width="6%"><img src="images/comment.png" style="height:30px;width:30px;"></td>
+<td width="24%">Comment</td>
+<td width="6%"><img src="images/share.png" style="height:30px;width:30px;"></td>
+<td width="19%">Share</td>
+<td width="15%"><img src="images/kapilSharma.jpg" style="height:20px;width:20px;border-radius:50%">
+<img src="images/caret-down.svg" style="height:20px;width:20px;"></td>
+</tr>
+</table>
+</div>
+<!-------------------------------------++++++++++++++++++++++++++++++++++++++++++++++++++++++---------------------------------------------->
+<div class="container-fluid">
+<table style="width:100%;height:50px;margin-top:25px">
+<tr>
+<td width="15%"><img src="images/hpLogo.jpg" style="height:50px;width:50px;border-radius:50%"></td>
+<td width="75%">
+<font style="color:blue;font-weight:bold;margin-left:px;font-size:13px">HP Pavilion 360</font><br>
+<font style="color:grey;font-weight:bold;margin-left:px;font-size:10px">Swift to the 12th Dimension</font>
+</td>
+<td width="10%"><a href="#"><img src="images/3 horizontal dots.svg" style="width:20px;"></a></td>
+</tr>
+</table>
+<font style="color:black;font-size:13px">THE FIRST AND MOST DIFFICULT CHALLENGE FERRARI ALWAYS FACES WHEN IT DECIDES TO DEVELOP A NEW MODEL IS TO PUSH THE BOUNDARIES OF ITS OWN ACHIEVEMENTS YET AGAIN.</font><br>
+<video style="height:285px;width:450px;object-fit:cover;margin-top:15px" controls id="uke5">
+<source src="videos/Explore The New Pavilion x360 PC HP Laptops HP.mp4" type="video/mp4">
+</video>
+<br>
+<table width="100%">
+<tr>
+<td width="6%"><img src="images/like2.png" style="height:30px;width:30px;"></td>
+<td width="44%">43k</td>
+<td width="50%">96 Comments 1.4k Share</td>
+</tr>
+</table>
+<table width="100%">
+<tr>
+<td width="6%"><img src="images/like.png" style="height:30px;width:30px;"></td>
+<td width="24%">Like</td>
+<td width="6%"><img src="images/comment.png" style="height:30px;width:30px;"></td>
+<td width="24%">Comment</td>
+<td width="6%"><img src="images/share.png" style="height:30px;width:30px;"></td>
+<td width="19%">Share</td>
+<td width="15%"><img src="images/kapilSharma.jpg" style="height:20px;width:20px;border-radius:50%">
+<img src="images/caret-down.svg" style="height:20px;width:20px;"></td>
+</tr>
+</table>
+</div>
+<!-------------------------------------++++++++++++++++++++++++++++++++++++++++++++++++++++++---------------------------------------------->
+<div class="container-fluid">
+<table style="width:100%;height:50px;margin-top:25px">
+<tr>
+<td width="15%"><img src="images/eliteLogo.jpg" style="height:50px;width:50px;border-radius:50%"></td>
+<td width="75%">
+<font style="color:blue;font-weight:bold;margin-left:px;font-size:13px">Elite Cup Cake</font><br>
+<font style="color:grey;font-weight:bold;margin-left:px;font-size:10px">Swift to the 12th Dimension</font>
+</td>
+<td width="10%"><a href="#"><img src="images/3 horizontal dots.svg" style="width:20px;"></a></td>
+</tr>
+</table>
+<font style="color:black;font-size:13px">THE FIRST AND MOST DIFFICULT CHALLENGE FERRARI ALWAYS FACES WHEN IT DECIDES TO DEVELOP A NEW MODEL IS TO PUSH THE BOUNDARIES OF ITS OWN ACHIEVEMENTS YET AGAIN.</font><br>
+<video style="height:285px;width:450px;object-fit:cover;margin-top:15px" controls id="uke6">
+<source src="videos/ELITE CUP CAKE AD HINDI 2014.mp4" type="video/mp4">
+</video>
+<br>
+<table width="100%">
+<tr>
+<td width="6%"><img src="images/like2.png" style="height:30px;width:30px;"></td>
+<td width="44%">43k</td>
+<td width="50%">96 Comments 1.4k Share</td>
+</tr>
+</table>
+<table width="100%">
+<tr>
+<td width="6%"><img src="images/like.png" style="height:30px;width:30px;"></td>
+<td width="24%">Like</td>
+<td width="6%"><img src="images/comment.png" style="height:30px;width:30px;"></td>
+<td width="24%">Comment</td>
+<td width="6%"><img src="images/share.png" style="height:30px;width:30px;"></td>
+<td width="19%">Share</td>
+<td width="15%"><img src="images/kapilSharma.jpg" style="height:20px;width:20px;border-radius:50%">
+<img src="images/caret-down.svg" style="height:20px;width:20px;"></td>
+</tr>
+</table>
+</div>
+<!-------------------------------------++++++++++++++++++++++++++++++++++++++++++++++++++++++---------------------------------------------->
+<div class="container-fluid">
+<table style="width:100%;height:50px;margin-top:25px">
+<tr>
+<td width="15%"><img src="images/cadbury gems.jpg" style="height:50px;width:50px;border-radius:50%"></td>
+<td width="75%">
+<font style="color:blue;font-weight:bold;margin-left:px;font-size:13px">Cadbury Gems</font><br>
+<font style="color:grey;font-weight:bold;margin-left:px;font-size:10px">Swift to the 12th Dimension</font>
+</td>
+<td width="10%"><a href="#"><img src="images/3 horizontal dots.svg" style="width:20px;"></a></td>
+</tr>
+</table>
+<font style="color:black;font-size:13px">THE FIRST AND MOST DIFFICULT CHALLENGE FERRARI ALWAYS FACES WHEN IT DECIDES TO DEVELOP A NEW MODEL IS TO PUSH THE BOUNDARIES OF ITS OWN ACHIEVEMENTS YET AGAIN.</font><br>
+<video style="height:285px;width:450px;object-fit:cover;margin-top:15px" controls id="uke7">
+<source src="videos/Cadbury Gems 30s Jitney Colours Utni Masti Film.mp4" type="video/mp4">
+</video>
+<br>
+<table width="100%">
+<tr>
+<td width="6%"><img src="images/like2.png" style="height:30px;width:30px;"></td>
+<td width="44%">43k</td>
+<td width="50%">96 Comments 1.4k Share</td>
+</tr>
+</table>
+<table width="100%">
+<tr>
+<td width="6%"><img src="images/like.png" style="height:30px;width:30px;"></td>
+<td width="24%">Like</td>
+<td width="6%"><img src="images/comment.png" style="height:30px;width:30px;"></td>
+<td width="24%">Comment</td>
+<td width="6%"><img src="images/share.png" style="height:30px;width:30px;"></td>
+<td width="19%">Share</td>
+<td width="15%"><img src="images/kapilSharma.jpg" style="height:20px;width:20px;border-radius:50%">
+<img src="images/caret-down.svg" style="height:20px;width:20px;"></td>
+</tr>
+</table>
+</div>
+<!-------------------------------------++++++++++++++++++++++++++++++++++++++++++++++++++++++---------------------------------------------->
+<div class="container-fluid">
+<table style="width:100%;height:50px;margin-top:25px">
+<tr>
+<td width="15%"><img src="images/lorealLogo.png" style="height:50px;width:50px;border-radius:50%"></td>
+<td width="75%">
+<font style="color:blue;font-weight:bold;margin-left:px;font-size:13px">L'Oréal</font><br>
+<font style="color:grey;font-weight:bold;margin-left:px;font-size:10px">Swift to the 12th Dimension</font>
+</td>
+<td width="10%"><a href="#"><img src="images/3 horizontal dots.svg" style="width:20px;"></a></td>
+</tr>
+</table>
+<font style="color:black;font-size:13px">THE FIRST AND MOST DIFFICULT CHALLENGE FERRARI ALWAYS FACES WHEN IT DECIDES TO DEVELOP A NEW MODEL IS TO PUSH THE BOUNDARIES OF ITS OWN ACHIEVEMENTS YET AGAIN.</font><br>
+<video style="height:285px;width:450px;object-fit:cover;margin-top:15px" controls id="uke8">
+<source src="videos/[HQ] Aishwarya Rai Ad for L'Oréal Paris x Sabyasachi (2018).mp4" type="video/mp4">
+</video>
+<br>
+<table width="100%">
+<tr>
+<td width="6%"><img src="images/like2.png" style="height:30px;width:30px;"></td>
+<td width="44%">43k</td>
+<td width="50%">96 Comments 1.4k Share</td>
+</tr>
+</table>
+<table width="100%">
+<tr>
+<td width="6%"><img src="images/like.png" style="height:30px;width:30px;"></td>
+<td width="24%">Like</td>
+<td width="6%"><img src="images/comment.png" style="height:30px;width:30px;"></td>
+<td width="24%">Comment</td>
+<td width="6%"><img src="images/share.png" style="height:30px;width:30px;"></td>
+<td width="19%">Share</td>
+<td width="15%"><img src="images/kapilSharma.jpg" style="height:20px;width:20px;border-radius:50%">
+<img src="images/caret-down.svg" style="height:20px;width:20px;"></td>
+</tr>
+</table>
+</div>
+<!-------------------------------------++++++++++++++++++++++++++++++++++++++++++++++++++++++---------------------------------------------->
+<script src="js/ScrollMagic.min.js"></script>
+<script src="js/plugins/debug.addIndicators.min.js"></script>
+    <script src='js/jquery.min.js'></script>
+    <script src='js/wow.min.js'></script>
+    <script src="js/slick/slick.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+.topbar{
+	background-color:#4667ac;
+	padding:10px;
+	height:82px}
+.container1{
+	float:left;
+	display:inline-block;
+	margin-left:168px
+}
+.container2{
+	float:right;
+	display:inline-block;
+	margin-right:200px
+}
+#facebook_word{
+	margin-top:13px
+}
+#un,#pw{height:20px;width:150px;border:1px solid black;}
+#loginbtn{height:100%;
+font-size:12px;
+color:white;
+background-color:#6785c2;
+font-weight:bold;
+border:0px solid #3a6690;
+cursor:pointer}
+.body{
+	background-color:#e9ebee;
+	width:100%;
+	border:2px solid #3a6690;
+}
+.inner-table{
+	margin-left:168px;
+	margin-right:200px;
+}
+.users{width:160px;height:200px;background-color:white;border-radius:4px 4px 0px 0px;position:relative}
+.users img{width:160px;height:160px;border-radius:4px 4px 0px 0px;}
+.cross{height:15px;border-radius:50%;background-color:transparent;color:white;border:0px;width:15px;z-index:2;position:absolute;display:inline-block;}
+.numbers{height:30px;border-radius:50%;background-color:red;color:white;margin-left:130px;border:0px;width:30px;z-index:2;position:absolute;
+display:inline-block;}

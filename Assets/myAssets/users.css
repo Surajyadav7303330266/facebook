@@ -1,0 +1,7 @@
+.topbar{background-color:#4267b2;height:45px;}
+.top-elements{margin-left:60px;height:30px;margin-top:10px}
+.top-elements .element{display:inline-block;height:30px;float:left;margin-right:15px;}
+.top-elements .element:hover{background-color:#34518d;cursor:pointer}
+.body{width:95%;margin-top:50px;margin-left:60px;}
+.body div{display:inline-block;float:left;height:590px;border:0px}
+.body div iframe{height:590px;border:0px;}
